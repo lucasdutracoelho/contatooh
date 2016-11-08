@@ -1,0 +1,27 @@
+<p ng-show="mensagem.texto">
+{{mensagem.texto}}
+</p>
+<form ng-submit="pesquisar()">
+	<div class="form-group">
+		<label for="zip">Zip Code</label>
+		<input type="text" class="form-control" id="zip"
+			name="zip" required ng-model="zip">
+	</div>
+	<div>
+		<button type="submit" class="btn btn-primary">
+			Pesquisar
+		</button>
+		<a href="#/" class="btn btn-default">Voltar</a>
+	</div>
+</form>
+
+<div class="form-group">
+	<label>Cidade: {{weather.City}} </label>
+</div>
+<div class="form-group">
+	<label>Estado: {{weather.State}} </label>
+</div>
+<div class="form-group">
+	<label>Temperatura: {{weather.Temperature}} </label>
+</div>		
+
